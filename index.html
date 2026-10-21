@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KOL Seeding 全流程内部 AI 工作台" />
+  <title>KOL Seeding Workbench</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">KS</div>
+        <div><strong>KOL SEEDING</strong><span>WORKBENCH</span></div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="sidebar-note">
+        <span class="eyebrow">WORKSPACE</span>
+        <strong>Content Strategy Team</strong>
+        <p>AI 辅助提案、执行与经验沉淀</p>
+      </div>
+      <button class="user-card" data-action="toast" data-message="账户菜单将在权限系统接入后开放">
+        <span class="avatar">ZY</span><span><strong>Zoe Yang</strong><small>Admin</small></span><span class="more">•••</span>
+      </button>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div class="breadcrumb" id="breadcrumb">工作台 / Dashboard</div>
+        <div class="top-actions">
+          <button class="icon-btn" data-action="toast" data-message="暂无新通知">⌁</button>
+          <button class="primary" data-route="new-project">＋ 新建项目</button>
+        </div>
+      </header>
+      <section id="app" class="content"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
